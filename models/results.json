@@ -1,0 +1,250 @@
+{
+  "classification": {
+    "Random Forest": {
+      "model": "Random Forest",
+      "accuracy": 0.9669724770642202,
+      "f1_score": 0.6666666666666666,
+      "roc_auc": 0.981052481052481,
+      "confusion_matrix": [
+        [
+          509,
+          9
+        ],
+        [
+          9,
+          18
+        ]
+      ]
+    },
+    "XGBoost": {
+      "model": "XGBoost",
+      "accuracy": 0.9559633027522936,
+      "f1_score": 0.4782608695652174,
+      "roc_auc": 0.9793364793364794,
+      "confusion_matrix": [
+        [
+          510,
+          8
+        ],
+        [
+          16,
+          11
+        ]
+      ]
+    },
+    "LightGBM": {
+      "model": "LightGBM",
+      "accuracy": 0.9614678899082569,
+      "f1_score": 0.5714285714285714,
+      "roc_auc": 0.9747604747604748,
+      "confusion_matrix": [
+        [
+          510,
+          8
+        ],
+        [
+          13,
+          14
+        ]
+      ]
+    }
+  },
+  "regression": {
+    "Random Forest": {
+      "model": "Random Forest",
+      "mae": 3.4054080735230503,
+      "rmse": 4.342926154307793
+    },
+    "XGBoost": {
+      "model": "XGBoost",
+      "mae": 3.5188753604888916,
+      "rmse": 4.45211919836445
+    },
+    "LightGBM": {
+      "model": "LightGBM",
+      "mae": 3.4156252900540403,
+      "rmse": 4.377196889578573
+    }
+  },
+  "feature_importances": {
+    "clf_Random Forest": {
+      "grid_clean": 0.1344917523279405,
+      "quali_position": 0.1560836598508786,
+      "quali_gap_to_pole": 0.15019849449430137,
+      "round_number": 0.009081860369546823,
+      "season_progress": 0.012328707518380057,
+      "driver_avg_finish_last5": 0.04028049256137611,
+      "driver_points_last5": 0.05709607887270503,
+      "driver_points_momentum": 0.012810404941423987,
+      "driver_career_races": 0.012029219507335185,
+      "driver_career_wins": 0.018076701885641533,
+      "driver_win_rate": 0.033660202203984704,
+      "driver_dnf_rate": 0.01968222205265706,
+      "constructor_avg_finish_last5": 0.02303084954900768,
+      "constructor_points_last5": 0.042053535649346954,
+      "constructor_dnf_rate": 0.07123116241831949,
+      "constructor_win_rate": 0.049149591401145616,
+      "constructor_points_momentum": 0.024802008076564557,
+      "driver_circuit_starts": 0.005945814434077927,
+      "driver_circuit_avg_finish": 0.011138641502406716,
+      "driver_circuit_best": 0.007523130874373266,
+      "driver_championship_pos": 0.054661019112148705,
+      "constructor_championship_pos": 0.054644450396438025
+    },
+    "clf_XGBoost": {
+      "grid_clean": 0.19987352192401886,
+      "quali_position": 0.47288328409194946,
+      "quali_gap_to_pole": 0.03950320556759834,
+      "round_number": 0.013381972908973694,
+      "season_progress": 0.011693074367940426,
+      "driver_avg_finish_last5": 0.03466853126883507,
+      "driver_points_last5": 0.01923786848783493,
+      "driver_points_momentum": 0.011391677893698215,
+      "driver_career_races": 0.013116059824824333,
+      "driver_career_wins": 0.014815731905400753,
+      "driver_win_rate": 0.01365366019308567,
+      "driver_dnf_rate": 0.014167925342917442,
+      "constructor_avg_finish_last5": 0.012633975595235825,
+      "constructor_points_last5": 0.013580738566815853,
+      "constructor_dnf_rate": 0.017951378598809242,
+      "constructor_win_rate": 0.016155419871211052,
+      "constructor_points_momentum": 0.010907395742833614,
+      "driver_circuit_starts": 0.011929444037377834,
+      "driver_circuit_avg_finish": 0.009597564116120338,
+      "driver_circuit_best": 0.01578068919479847,
+      "driver_championship_pos": 0.016459915786981583,
+      "constructor_championship_pos": 0.016616787761449814
+    },
+    "clf_LightGBM": {
+      "grid_clean": 464,
+      "quali_position": 264,
+      "quali_gap_to_pole": 811,
+      "round_number": 341,
+      "season_progress": 617,
+      "driver_avg_finish_last5": 797,
+      "driver_points_last5": 743,
+      "driver_points_momentum": 1057,
+      "driver_career_races": 631,
+      "driver_career_wins": 481,
+      "driver_win_rate": 694,
+      "driver_dnf_rate": 576,
+      "constructor_avg_finish_last5": 791,
+      "constructor_points_last5": 763,
+      "constructor_dnf_rate": 654,
+      "constructor_win_rate": 572,
+      "constructor_points_momentum": 1042,
+      "driver_circuit_starts": 235,
+      "driver_circuit_avg_finish": 869,
+      "driver_circuit_best": 319,
+      "driver_championship_pos": 181,
+      "constructor_championship_pos": 320
+    },
+    "reg_Random Forest": {
+      "grid_clean": 0.1067172510741337,
+      "quali_position": 0.3481857076343615,
+      "quali_gap_to_pole": 0.04217225039786896,
+      "round_number": 0.010025378280342159,
+      "season_progress": 0.019531781915264536,
+      "driver_avg_finish_last5": 0.025700368617840124,
+      "driver_points_last5": 0.026138752090152748,
+      "driver_points_momentum": 0.024050400217424207,
+      "driver_career_races": 0.02499905836377192,
+      "driver_career_wins": 0.007468411109679187,
+      "driver_win_rate": 0.014117148383995325,
+      "driver_dnf_rate": 0.031158805596038282,
+      "constructor_avg_finish_last5": 0.08785262655187821,
+      "constructor_points_last5": 0.05391752263758878,
+      "constructor_dnf_rate": 0.04056038392220375,
+      "constructor_win_rate": 0.02154884576370356,
+      "constructor_points_momentum": 0.03957271527772332,
+      "driver_circuit_starts": 0.007089504371451912,
+      "driver_circuit_avg_finish": 0.022503791356516718,
+      "driver_circuit_best": 0.012787561772043873,
+      "driver_championship_pos": 0.015735608626933142,
+      "constructor_championship_pos": 0.018166126039084036
+    },
+    "reg_XGBoost": {
+      "grid_clean": 0.06172812357544899,
+      "quali_position": 0.16876034438610077,
+      "quali_gap_to_pole": 0.026054086163640022,
+      "round_number": 0.019500210881233215,
+      "season_progress": 0.02508610486984253,
+      "driver_avg_finish_last5": 0.02856132760643959,
+      "driver_points_last5": 0.03519297391176224,
+      "driver_points_momentum": 0.030814532190561295,
+      "driver_career_races": 0.02879530005156994,
+      "driver_career_wins": 0.044697847217321396,
+      "driver_win_rate": 0.04142668470740318,
+      "driver_dnf_rate": 0.03136177361011505,
+      "constructor_avg_finish_last5": 0.05460421368479729,
+      "constructor_points_last5": 0.05726863071322441,
+      "constructor_dnf_rate": 0.039232950657606125,
+      "constructor_win_rate": 0.04761693999171257,
+      "constructor_points_momentum": 0.07609209418296814,
+      "driver_circuit_starts": 0.025929095223546028,
+      "driver_circuit_avg_finish": 0.03195101022720337,
+      "driver_circuit_best": 0.03457358106970787,
+      "driver_championship_pos": 0.034946974366903305,
+      "constructor_championship_pos": 0.05580525100231171
+    },
+    "reg_LightGBM": {
+      "grid_clean": 519,
+      "quali_position": 491,
+      "quali_gap_to_pole": 1148,
+      "round_number": 389,
+      "season_progress": 698,
+      "driver_avg_finish_last5": 939,
+      "driver_points_last5": 663,
+      "driver_points_momentum": 813,
+      "driver_career_races": 940,
+      "driver_career_wins": 168,
+      "driver_win_rate": 371,
+      "driver_dnf_rate": 967,
+      "constructor_avg_finish_last5": 877,
+      "constructor_points_last5": 718,
+      "constructor_dnf_rate": 927,
+      "constructor_win_rate": 517,
+      "constructor_points_momentum": 713,
+      "driver_circuit_starts": 195,
+      "driver_circuit_avg_finish": 745,
+      "driver_circuit_best": 374,
+      "driver_championship_pos": 460,
+      "constructor_championship_pos": 593
+    }
+  },
+  "best_classifier": "Random Forest",
+  "best_regressor": "Random Forest",
+  "data_info": {
+    "train_years": "2009-2023",
+    "val_year": "2024",
+    "test_years": "2025-2026",
+    "total_samples": 7321,
+    "train_samples": 6297,
+    "test_samples": 545,
+    "n_features": 22,
+    "features": [
+      "grid_clean",
+      "quali_position",
+      "quali_gap_to_pole",
+      "round_number",
+      "season_progress",
+      "driver_avg_finish_last5",
+      "driver_points_last5",
+      "driver_points_momentum",
+      "driver_career_races",
+      "driver_career_wins",
+      "driver_win_rate",
+      "driver_dnf_rate",
+      "constructor_avg_finish_last5",
+      "constructor_points_last5",
+      "constructor_dnf_rate",
+      "constructor_win_rate",
+      "constructor_points_momentum",
+      "driver_circuit_starts",
+      "driver_circuit_avg_finish",
+      "driver_circuit_best",
+      "driver_championship_pos",
+      "constructor_championship_pos"
+    ]
+  }
+}
